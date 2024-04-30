@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        background-image: url('static/img/img.jpg');
+        background-size: cover; 
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        max-width: 300px; 
+        width: 80%; 
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        padding: 40px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        height: 350px;
+    }
+    
+    h1 {
+    
+        margin-bottom: 50px;
+        color: #0677f1; 
+        font-size: 28px; 
+    }
+    
+    p {
+        margin-bottom: 30px;
+        color: #333; 
+        font-size: 16px; 
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    li {
+        margin-bottom: 20px; 
+    }
+    
+    a {
+        display: block;
+        padding: 15px 20px; 
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    a:hover {
+        background-color: #0056b3;
+    }
+    
+</style>
+    
+</head>
+<body> 
+    <div class="container">
+        <h1 style="font-size: 38px;">Login</h1>
+        <p>Please select your user type to login:</p>
+        <ul>
+            <li><a href="{% url 'doctor_login' %}">Doctor Login</a></li>
+            <li><a href="{% url 'patient_login' %}">Patient Login</a></li>
+        </ul>
+    </div>
+</body>
+</html>

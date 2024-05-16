@@ -3,8 +3,9 @@
 
 - Clone the repository:
 
-  git clone <repository-url>
-  cd <project-directory>
+  git clone https://github.com/Parthaj07/Djangoproject.git
+  
+  cd project directory
 
 - Install dependencies:
   pip install -r requirements.txt
